@@ -1,0 +1,68 @@
+body {
+  background-color: #faf9f6;
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column; /* Arranges elements vertically. this produces 2 columns. 1st is for the main element, 2nd for the footer */
+}
+
+.main {
+  flex: 1; /* so that all the coluns are the same size vertically */
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.card {
+  width: 45%; /* so that both left and right cards can fit on the same line */
+}
+
+.left {
+  float: left; /* so that the left card floats to the left of it's parent, which is the main div */
+}
+
+.right {
+  float: right;
+}
+
+.creative {
+  color: midnightblue;
+}
+
+footer {
+  color: midnightblue;
+  text-align: right;
+}
+
+@media (max-width: 680px) { /* this means  */
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .tile-image {
+    width: 100%;
+    margin-bottom: 10px;
+    display: inline;
+    object-fit: cover;
+  }
+
+  .card {
+    width: 100%;
+    text-align: justify;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
